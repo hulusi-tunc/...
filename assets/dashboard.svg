@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 680" font-family="Inter, system-ui, sans-serif">
+  <defs>
+    <linearGradient id="chart" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7c5cff" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#7c5cff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="chart2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#00d4ff" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#00d4ff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7c5cff"/><stop offset="1" stop-color="#00d4ff"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="680" rx="18" fill="#0a0c1c"/>
+
+  <!-- sidebar -->
+  <rect x="0" y="0" width="232" height="680" fill="#070817"/>
+  <path d="M30 30 41 50H19z" fill="url(#accent)"/>
+  <text x="52" y="46" fill="#eef0ff" font-size="17" font-weight="700">Axiom</text>
+  <rect x="18" y="86" width="196" height="38" rx="10" fill="#7c5cff" opacity=".18"/>
+  <rect x="18" y="86" width="3" height="38" rx="1.5" fill="url(#accent)"/>
+  <text x="36" y="110" fill="#cfd3f5" font-size="13" font-weight="600">Workflows</text>
+  <text x="36" y="158" fill="#646b8c" font-size="13">Agents</text>
+  <text x="36" y="200" fill="#646b8c" font-size="13">Evaluations</text>
+  <text x="36" y="242" fill="#646b8c" font-size="13">Traces</text>
+  <text x="36" y="284" fill="#646b8c" font-size="13">Deployments</text>
+  <text x="36" y="326" fill="#646b8c" font-size="13">Router</text>
+  <rect x="18" y="600" width="196" height="1" fill="#1c1f38"/>
+  <circle cx="34" cy="638" r="13" fill="#23264a"/>
+  <text x="56" y="643" fill="#9aa1c0" font-size="12">maya@nordbeam.io</text>
+
+  <!-- header -->
+  <text x="264" y="56" fill="#eef0ff" font-size="20" font-weight="700">Support copilot · production</text>
+  <rect x="264" y="74" width="64" height="20" rx="10" fill="#34f5c5" opacity=".15"/>
+  <circle cx="276" cy="84" r="3.5" fill="#34f5c5"/>
+  <text x="285" y="88" fill="#34f5c5" font-size="11" font-weight="600">Live</text>
+  <rect x="924" y="38" width="120" height="36" rx="18" fill="url(#accent)"/>
+  <text x="947" y="61" fill="#0a0518" font-size="13" font-weight="700">Deploy</text>
+
+  <!-- stat cards -->
+  <g>
+    <rect x="264" y="116" width="248" height="92" rx="14" fill="#10122a" stroke="#22254a"/>
+    <text x="284" y="146" fill="#646b8c" font-size="12">Agent runs · 24h</text>
+    <text x="284" y="182" fill="#eef0ff" font-size="26" font-weight="700">1,284,902</text>
+    <text x="412" y="182" fill="#34f5c5" font-size="12">▲ 12.4%</text>
+  </g>
+  <g>
+    <rect x="530" y="116" width="248" height="92" rx="14" fill="#10122a" stroke="#22254a"/>
+    <text x="550" y="146" fill="#646b8c" font-size="12">Median latency</text>
+    <text x="550" y="182" fill="#eef0ff" font-size="26" font-weight="700">38 ms</text>
+    <text x="640" y="182" fill="#34f5c5" font-size="12">▼ 9 ms</text>
+  </g>
+  <g>
+    <rect x="796" y="116" width="248" height="92" rx="14" fill="#10122a" stroke="#22254a"/>
+    <text x="816" y="146" fill="#646b8c" font-size="12">Eval pass rate</text>
+    <text x="816" y="182" fill="#eef0ff" font-size="26" font-weight="700">98.2%</text>
+    <text x="908" y="182" fill="#34f5c5" font-size="12">▲ 1.1%</text>
+  </g>
+
+  <!-- main chart -->
+  <rect x="264" y="228" width="514" height="270" rx="14" fill="#10122a" stroke="#22254a"/>
+  <text x="284" y="260" fill="#9aa1c0" font-size="13" font-weight="600">Throughput by route</text>
+  <g stroke="#1b1e3c"><path d="M284 330H758M284 380H758M284 430H758"/></g>
+  <path d="M284 440 C330 420 360 390 410 392 S480 350 530 340 S620 300 670 296 S730 286 758 270 V470 H284 Z" fill="url(#chart)"/>
+  <path d="M284 440 C330 420 360 390 410 392 S480 350 530 340 S620 300 670 296 S730 286 758 270" fill="none" stroke="#7c5cff" stroke-width="2.5"/>
+  <path d="M284 455 C340 450 380 430 430 432 S500 410 550 404 S640 370 690 372 S735 350 758 342 V470 H284 Z" fill="url(#chart2)"/>
+  <path d="M284 455 C340 450 380 430 430 432 S500 410 550 404 S640 370 690 372 S735 350 758 342" fill="none" stroke="#00d4ff" stroke-width="2.5"/>
+  <circle cx="670" cy="296" r="5" fill="#7c5cff" stroke="#eef0ff" stroke-width="2"/>
+
+  <!-- side panel: model routing -->
+  <rect x="796" y="228" width="248" height="270" rx="14" fill="#10122a" stroke="#22254a"/>
+  <text x="816" y="260" fill="#9aa1c0" font-size="13" font-weight="600">Router decisions</text>
+  <g font-size="12">
+    <text x="816" y="296" fill="#cfd3f5">axiom-fast-v3</text>
+    <rect x="816" y="306" width="208" height="6" rx="3" fill="#1b1e3c"/>
+    <rect x="816" y="306" width="152" height="6" rx="3" fill="url(#accent)"/>
+    <text x="816" y="344" fill="#cfd3f5">axiom-reason-v2</text>
+    <rect x="816" y="354" width="208" height="6" rx="3" fill="#1b1e3c"/>
+    <rect x="816" y="354" width="96" height="6" rx="3" fill="url(#accent)"/>
+    <text x="816" y="392" fill="#cfd3f5">embed-large</text>
+    <rect x="816" y="402" width="208" height="6" rx="3" fill="#1b1e3c"/>
+    <rect x="816" y="402" width="63" height="6" rx="3" fill="url(#accent)"/>
+    <text x="816" y="440" fill="#cfd3f5">rerank-v1</text>
+    <rect x="816" y="450" width="208" height="6" rx="3" fill="#1b1e3c"/>
+    <rect x="816" y="450" width="38" height="6" rx="3" fill="url(#accent)"/>
+  </g>
+
+  <!-- runs table -->
+  <rect x="264" y="518" width="780" height="132" rx="14" fill="#10122a" stroke="#22254a"/>
+  <text x="284" y="548" fill="#9aa1c0" font-size="13" font-weight="600">Recent runs</text>
+  <g font-size="12">
+    <circle cx="292" cy="576" r="4" fill="#34f5c5"/>
+    <text x="308" y="580" fill="#cfd3f5">run_8f2a · classify-intent</text><text x="640" y="580" fill="#646b8c">412 ms</text><text x="760" y="580" fill="#646b8c">2,341 tok</text><text x="960" y="580" fill="#34f5c5">passed</text>
+    <circle cx="292" cy="604" r="4" fill="#34f5c5"/>
+    <text x="308" y="608" fill="#cfd3f5">run_8f29 · draft-reply</text><text x="640" y="608" fill="#646b8c">1.2 s</text><text x="760" y="608" fill="#646b8c">5,872 tok</text><text x="960" y="608" fill="#34f5c5">passed</text>
+    <circle cx="292" cy="632" r="4" fill="#ffb454"/>
+    <text x="308" y="636" fill="#cfd3f5">run_8f28 · escalate-check</text><text x="640" y="636" fill="#646b8c">388 ms</text><text x="760" y="636" fill="#646b8c">1,007 tok</text><text x="960" y="636" fill="#ffb454">retried</text>
+  </g>
+</svg>
